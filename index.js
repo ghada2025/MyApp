@@ -2,7 +2,9 @@ import cors from "cors"
 import "dotenv/config"
 import express from "express"
 import helmet from "helmet"
+import { checkRequestTimeAndDay } from "./middleware/checkRequest.js"
 const app = express()
+
 // middlewares
 app.use(cors())
 app.use(helmet())
@@ -12,6 +14,7 @@ app.use(express.static("./static"))
 app.set("view engine", "pug")
 app.set("views", "./views")
 
+app.use(checkRequestTimeAndDay)
 
 app.get("/", (req, res) => {
     res.render("home")
