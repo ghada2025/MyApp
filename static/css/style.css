@@ -265,4 +265,137 @@ body {
     right: 240px;
     z-index: -1; 
   }
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #14183E;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    padding: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-image: url("../media/Group 78.png"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 100px 18px 18px 18px;
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .contact-info {
+    color: #5E6282;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    width: 600px;
+    line-height: 40px;
+  }
+  
+  .contact-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #5E6282;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-input::placeholder {
+    color: #A9A9A9;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(90deg, #FF946D, #FF7D68);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(255, 125, 104, 0.6);
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background: linear-gradient(90deg, #FF7D68, #FF946D); 
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .social-title {
+    font-size: 22px;
+    color: #5E6282;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+
+  }
+  
+  .social-icons img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2); 
+  }
+  
+  .app-discovery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .app-title {
+    font-size: 22px;
+    color: #5E6282;
+    text-align: center;
+  }
+  
+  .app-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les icônes */
+  }
+  
+  .app-icons img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .app-icons img:hover {
+    transform: scale(1.1); 
+  }
+  
   

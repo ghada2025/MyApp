@@ -7,4 +7,22 @@ html(lang="en")
         link(rel="stylesheet", href="../static/css/style3.css")
     body
         include  ./components/navbar.pug
-        h1 hello in my page contact us 
+        h1.section-title Contact
+        div.contact-container 
+            div.contact-form
+                h3.contact-info Our team is here to assist you during business hours, Monday through Friday, from 9:00 AM to 5:00 PM
+                input.contact-input(type="text", placeholder="Enter your questions")
+                button.contact-button Subscribe 
+            div.social-media 
+                h2.social-title Find us on social media
+                div.social-icons 
+                    img(src="./media/Social.png", alt="fb")
+                    img(src="./media/Social (1).png", alt="insta")
+                    img(src="./media/Social (2).png", alt="insta")
+            div.app-discovery 
+                h2.app-title Discover our app
+                div.app-icons 
+                    img(src="./media/Play Store.png", alt="Play store")
+                    img(src="./media/Google Play.png", alt="Google Play")
+            
+
