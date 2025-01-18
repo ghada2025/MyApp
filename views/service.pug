@@ -3,33 +3,65 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        link(rel="stylesheet", href="../static/css/style2.css")
+        title Service
+        link(rel="stylesheet", href="../static/css/style.css")
     body 
         include  ./components/navbar.pug
-        h1 Nos Services
-        p Nos services sont conçus pour répondre à vos besoins en "développement web", "marketing digital" Découvrez ci-dessous comment nous pouvons vous aider.
-        h2 liste de nos Services
-        div 
-            img
-            div 
-                h3 Developpement Web 
-                p  Nous créons des sites web modernes, responsives et optimisés pour offrir la meilleure expérience utilisateur
-        div 
-            img
-            div 
-                h3 Création de Contenu
-                p Nous vous aidons à créer du contenu engageant pour vos blogs, réseaux sociaux ou sites web 
-        div 
-            img
-            div 
-                h3 Référencement SEO 
-                p  Améliorez votre visibilité en ligne grâce à nos stratégies de référencement sur mesure
-        div 
-            img
-            div 
-                h3 Design Graphique
-                p Nous concevons des designs visuellement attrayants pour vos supports marketing (logos, bannières, flyers, etc.
-        h2 Détails supplémentaires
-        p Nos experts utilisent les dernières technologies pour garantir des solutions de qualité
-        img // react node.js express.js mongodb tailwind js 
+        h1.section-title We Offer Best Services 
+        div.services 
+            div.service-card
+                img.service-img(src="./media/Group 48.png", alt="Calculated Weather ")
+                div.service-text 
+                    h4.service-title Calculated Weather 
+                    p.service-description Built Wicket longer admire do barton vanity itself do in it.
+            div.service-card-group
+                div.service-card 
+                    img.service-img(src="./media/Group 51.png", alt="Best Flights")
+                    div.service-text 
+                        h4.service-title Best Flights
+                        p.service-description Engrossed listening. Park gate sell they west hard for the.
+                div.service-image 
+                    img.rectangle-img(src="./media/Rectangle 157.png", alt="Rectangle")
+            div.service-card
+                img.service-img(src="./media/Group 50.png", alt="Local Events") 
+                div.service-text  
+                    h4.service-title Local Events
+                    p.service-description Barton vanity itself do in it. Preferd to men it engrossed listening. 
+            div.service-card 
+                img.service-img(src="./media/Group 49.png", alt="Customization")
+                div.service-text 
+                    h4.service-title Customization
+                    p.service-description We deliver outsourced aviation services for military customers
+        h1(id="destination").section-title Top Destinations  
+        div.destination-container
+            div.destination-card 
+                img.destination-img(src="./media/Rectangle 14.png", alt="")
+                div.destination-text 
+                    div.destination-details 
+                        h4.destination-titl Rome, Italty 
+                        p.destination-price $ 5,42k
+                    div.trip-info 
+                        img.trip-icon(src="./media/navigation 1.png", alt="navigation")
+                        p.trip-duration 10 Days Trip
+            div.destination-card 
+                img.destination-img(src="./media/Rectangle 15.jpg", alt="")
+                div.destination-text 
+                    div.destination-details 
+                        h4.destination-titl London, UK
+                        p.destination-price $ 4.2k
+                    div.trip-info 
+                        img.trip-icon(src="./media/navigation 1.png", alt="navigation")
+                        p.trip-duration 12 Days Trip
+            div
+                div.destination-card
+                    img.destination-img(src="./media/Rectangle 16.png", alt="")
+                    div.destination-text 
+                        div.destination-details
+                            h4.destination-titl Full Europe
+                            p.destination-price $ 15k
+                        div.trip-info
+                            img.trip-icon(src="./media/navigation 1.png", alt="navigation")
+                            p.trip-duration 28 Days Trip
+            div.decoration 
+                img(src="./media/Decore.png", alt="descore")
+
