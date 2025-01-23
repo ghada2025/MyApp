@@ -16,10 +16,7 @@ export function checkRequestTimeAndDay(req, res, next){
       next(); // Passer au middleware suivant si les conditions sont remplies
     } else {
       console.log(`Requête rejetée à ${currentHour}h, jour: ${currentDay}`);
-      res.status(403).json({
-        status: "error",
-        message: "Requêtes acceptées uniquement entre 9h et 17h, du lundi au vendredi.",
-      });
+      res.render("error", { message: "Desole, le site est ferme essayer plus tard dans les heures de travail" });
     }
   };
   
